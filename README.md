@@ -1,11 +1,11 @@
-# Popsy
+# Tepsi
 
 🧙‍♂️ Animate.css compatible corner popup library for your website.
 
 ## Usage
 Displays `foo` within the popup.
 ```javascript
-let popsy = popsy({
+let tepsi = popsy({
     content: 'foo',
 });
 ```
@@ -17,7 +17,7 @@ Displays the element with the id `foo` within the popup.
 ```
 
 ```javascript
-let popsy = popsy({
+let tepsi = popsy({
     popsyId: 'foo',
 });
 ```
