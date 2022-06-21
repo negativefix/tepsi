@@ -19,6 +19,8 @@ function popsy(options) {
         containerElement: 'div', // default container element
         content: 'Hello Tepsi!', // default content of the popup
         customClass: null, // custom class to add to the container element
+        dismissButton: false, // toggles dismiss button
+        dismissButtonIcon: 'x', // icon to display within dismiss button
         beforeInitialize: null, // callback to run before popup is initialized
         afterInitialized: null, // callback to run after popup is initialized
         onToggle: null, // callback to run when popup is toggled
@@ -46,7 +48,7 @@ function popsy(options) {
     let containerElement = opts.containerElement || 'div';
     container = container || document.createElement(containerElement);
 
-    container.classList.add('popsy');
+    container.classList.add(selectors.popsy);
     container.style.width = opts.width;
     container.style.inset = locationToPosition(opts.location);
 
@@ -67,6 +69,8 @@ function popsy(options) {
         // if popup is visible at the time animation ends toggle the container off
         if (!state.isActive) {
             container.classList.toggle(selectors.popsyActive);
+            container.classList.remove(opts.animateIdleClass);
+            container.classList.remove(opts.animateOutClass);
         }
 
     });
@@ -85,6 +89,8 @@ function popsy(options) {
     toggle();
 
     isFn(opts.afterInitialized) && opts.afterInitialized();
+
+
 
 
     /*** translates the given string location to a style position
