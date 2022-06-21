@@ -47,10 +47,10 @@ let tepsi = popsy({
 
 
 ## Methods
-| method | description |
-| ------ | ----------- |
-| toggle | toggles the popup |
-| update | replaces the content of the popup runtime |
+| method | parameters | description |
+| ------ | ---------- | ----------- |
+| toggle | -          | toggles the popup |
+| content | content: string | replaces the content of the popup runtime |
 
 
 ## License
