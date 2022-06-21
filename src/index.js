@@ -2,6 +2,7 @@
 // TODO - add dismiss button
 // TODO - add examples
 // TODO - configure a bundler
+import './popsy.css';
 
 function popsy(options) {
   const defaultOptions = {
@@ -169,3 +170,5 @@ function popsy(options) {
     toggle,
   };
 }
+
+export default popsy;
