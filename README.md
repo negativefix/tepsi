@@ -1,5 +1,7 @@
 # Tepsi
 
+## Beware: work in progress
+
 🧙‍♂️ Animate.css compatible corner popup library for your website.
 
 ## Usage
