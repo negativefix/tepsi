@@ -169,5 +169,3 @@ function popsy(options) {
     toggle,
   };
 }
-
-var popsyInstance = popsy({ popsyId: 'aaa', customClass: 'hello', location: 'top-right', autoDismiss: true });
