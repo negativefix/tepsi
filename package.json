@@ -2,11 +2,15 @@
   "name": "tepsi",
   "version": "1.0.0",
   "description": "Animate.css compatible corner popup library.",
-  "main": "src/index.js",
+  "main": "dist/tepsi.cjs.min.js",
+  "module": "dist/tepsi.esm.min.js",
+  "browser": "dist/tepsi.umd.min.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
