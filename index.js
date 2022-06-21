@@ -17,7 +17,7 @@ function popsy(options) {
         xOffset: '10px', // offset from the left/right edge of the screen
         yOffset: '10px', // offset from the top/bottom of the screen
         containerElement: 'div', // default container element
-        content: 'Hello popsycho!', // default content of the popup
+        content: 'Hello Tepsi!', // default content of the popup
         customClass: null, // custom class to add to the container element
         beforeInitialize: null, // callback to run before popup is initialized
         afterInitialized: null, // callback to run after popup is initialized
