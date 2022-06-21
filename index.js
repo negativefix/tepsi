@@ -79,6 +79,10 @@ function popsy(options) {
     if (!container.childNodes.length) {
         container.insertAdjacentHTML('beforeend', opts.content);
     }
+
+    if (opts.dismissButton) {
+        container.appendChild(opts.dismissButton);
+    }
    
     isFn(opts.beforeInitialize) && opts.beforeInitialize();
 
@@ -90,7 +94,16 @@ function popsy(options) {
 
     isFn(opts.afterInitialized) && opts.afterInitialized();
 
-
+    /***
+     * creates an returns HTMLElement for dismiss button
+     */
+    function createDismissButton() {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.innerHTML = opts.dismissButtonIcon;
+        button.addEventListener('click', () => toggle());
+        return button;
+    }
 
 
     /*** translates the given string location to a style position
