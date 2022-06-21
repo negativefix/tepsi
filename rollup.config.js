@@ -1,4 +1,5 @@
 // rollup.config.js
+// TODO - minify styles
 import css from 'rollup-plugin-import-css';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
