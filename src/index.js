@@ -1,7 +1,7 @@
 // TODO - document default options using js doc
 // TODO - add dismiss button
 // TODO - add examples
-// TODO - configure a bundler
+// TODO - configure babel
 import './popsy.css';
 
 function popsy(options) {
