@@ -44,7 +44,8 @@ let tepsi = popsy({
 | beforeInitialize | function | null | callback to run before popup is initialized|
 | afterInitialized | function | null | callback to run after popup is callback to run after popup is initialized|
 | onToggle | function | null | callback to run when popup is toggled|
-
+| dismissButton | boolean | false | enable/disable dismiss button |
+| dismisButtonIcon | string | 'x' | icon to use within dismiss button |
 
 ## Methods
 | method | parameters | description |
