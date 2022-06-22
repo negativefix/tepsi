@@ -1,8 +1,9 @@
 // rollup.config.js
 // TODO - minify styles
-import css from 'rollup-plugin-import-css';
+import postcss from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
 import babel from '@rollup/plugin-babel';
+import path from 'path';
 import pkg from './package.json';
 
 export default {
@@ -20,7 +21,11 @@ export default {
   ],
   plugins: [
     babel({ babelHelpers: 'bundled' }),
-    css(),
+    postcss({
+      minimize: true,
+      extract: true,
+      extractPath: path.resolve(__dirname, 'dist/tepsi.min.css'),
+    }),
     terser(),
   ],
 };
