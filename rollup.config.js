@@ -2,6 +2,7 @@
 // TODO - minify styles
 import css from 'rollup-plugin-import-css';
 import { terser } from 'rollup-plugin-terser';
+import babel from '@rollup/plugin-babel';
 import pkg from './package.json';
 
 export default {
@@ -17,5 +18,9 @@ export default {
       format: 'es',
     },
   ],
-  plugins: [css(), terser()],
+  plugins: [
+    babel({ babelHelpers: 'bundled' }),
+    css(),
+    terser(),
+  ],
 };
