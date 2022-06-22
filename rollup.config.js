@@ -3,6 +3,7 @@
 import postcss from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
 import babel from '@rollup/plugin-babel';
+import autoprefixer from 'autoprefixer';
 import path from 'path';
 import pkg from './package.json';
 
@@ -25,6 +26,9 @@ export default {
       minimize: true,
       extract: true,
       extractPath: path.resolve(__dirname, 'dist/tepsi.min.css'),
+      plugins: [
+        autoprefixer(),
+      ],
     }),
     terser(),
   ],
