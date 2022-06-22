@@ -31,9 +31,7 @@
 }
 
 .popsy-animated {
-    -webkit-animation-name: popsyFadeIn;
     animation-name: popsyFadeIn;
-    -webkit-animation-duration: var(--popsy-animation-duration);
     animation-duration: var(--popsy-animation-duration);
 }
 
