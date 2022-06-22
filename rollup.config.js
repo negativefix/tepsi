@@ -6,6 +6,8 @@ import autoprefixer from 'autoprefixer';
 import path from 'path';
 import pkg from './package.json';
 
+// TOOD - Split dev/prodc configuration
+
 export default {
   input: 'src/index.js',
   output: [
