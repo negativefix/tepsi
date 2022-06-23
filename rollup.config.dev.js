@@ -1,6 +1,9 @@
 // rollup.config.js
 import babel from '@rollup/plugin-babel';
 import postcss from 'rollup-plugin-postcss';
+import livereload from 'rollup-plugin-livereload';
+import serve from 'rollup-plugin-serve';
+
 
 import path from 'path';
 
@@ -19,5 +22,7 @@ export default {
       extract: true,
       extractPath: path.resolve(__dirname, 'dist/tepsi.min.css'),
     }),
+    serve(),
+    livereload(),
   ],
 };
