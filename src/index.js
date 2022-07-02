@@ -20,6 +20,7 @@ function popsy(options) {
     customClass: null, // custom class to add to the container element
     dismissButton: false, // toggles dismiss button
     dismissButtonIcon: 'x', // icon to display within dismiss button
+    dismissButtonCustomClass: '', // custom class to the dismiss button
     beforeInitialize: null, // callback to run before popup is initialized
     afterInitialized: null, // callback to run after popup is initialized
     onToggle: null, // callback to run when popup is toggled
@@ -98,6 +99,8 @@ function popsy(options) {
     const button = document.createElement('button');
     button.type = 'button';
     button.innerHTML = opts.dismissButtonIcon;
+    button.classList.add('popsy-dismiss');
+    if (opts.dismissButtonCustomClass) button.classList.add(opts.dismissButtonCustomClass);
     button.addEventListener('click', () => toggle());
     return button;
   }
