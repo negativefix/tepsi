@@ -1,5 +1,4 @@
 // TODO - document default options using js doc
-// TODO - add dismiss button
 // TODO - add examples
 import './popsy.css';
 
@@ -149,7 +148,6 @@ function popsy(options) {
   /**
    * toggles popsy on or off
    */
-  /// TODO - toggle animation classes based on the state
   function toggle() {
     if (isFn(opts.onToggle)) opts.onToggle();
 
