@@ -20,7 +20,7 @@ export default {
     babel({ babelHelpers: 'bundled' }),
     postcss({
       extract: true,
-      extractPath: path.resolve(__dirname, 'dist/tepsi.min.css'),
+      extractPath: path.resolve(__dirname, 'dev/tepsi.min.css'),
     }),
     serve(),
     livereload(),
