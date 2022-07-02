@@ -68,8 +68,7 @@ function popsy(options) {
     // if popup is visible at the time animation ends toggle the container off
     if (!state.isActive) {
       container.classList.toggle(selectors.popsyActive);
-      container.classList.remove(opts.animateIdleClass);
-      container.classList.remove(opts.animateOutClass);
+      container.classList.remove(opts.animateIdleClass, opts.animateOutClass);
     }
   });
 
