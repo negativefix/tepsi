@@ -93,7 +93,8 @@ function popsy(options) {
   if (isFn(opts.afterInitialized)) opts.afterInitialized();
 
   /**
-   * creates an returns HTMLElement for dismiss button
+   * creates an returns HTMLButtonElement for dismiss button
+   * @returns {HTMLButtonElement}
    */
   function createDismissButton() {
     const button = document.createElement('button');
