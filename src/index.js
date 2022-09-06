@@ -26,8 +26,8 @@ function popsy(options) {
   };
 
   const selectors = {
-    popsy: 'popsy',
-    popsyActive: 'popsy-active',
+    tepsi: 'tepsi',
+    tepsiActive: 'tepsi-active',
   };
 
   const state = {
@@ -37,14 +37,14 @@ function popsy(options) {
   const opts = { ...defaultOptions, ...options };
 
   // create popsy container
-  const containerSelector = opts.popsyId || selectors.popsy;
+  const containerSelector = opts.popsyId || selectors.tepsi;
   let container = document.getElementById(containerSelector);
 
   // fallback to default container when none is found
   const containerElement = opts.containerElement || 'div';
   container = container || document.createElement(containerElement);
 
-  container.classList.add(selectors.popsy);
+  container.classList.add(selectors.tepsi);
   container.style.width = opts.width;
   container.style.inset = locationToPosition(opts.location);
 
@@ -66,7 +66,7 @@ function popsy(options) {
 
     // if popup is visible at the time animation ends toggle the container off
     if (!state.isActive) {
-      container.classList.toggle(selectors.popsyActive);
+      container.classList.toggle(selectors.tepsiActive);
       container.classList.remove(opts.animateIdleClass, opts.animateOutClass);
     }
   });
@@ -161,7 +161,7 @@ function popsy(options) {
       container.classList.remove(opts.animateOutClass);
       // when toggling on immediately display the popup
       // when toggling off wait for animation to finish
-      container.classList.toggle(selectors.popsyActive);
+      container.classList.toggle(selectors.tepsiActive);
     }
   }
 
