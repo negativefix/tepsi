@@ -11,7 +11,7 @@ function popsy(options) {
     animateInClass: 'popsy-animated-fadein', // class to add when popup is toggled on
     animateOutClass: 'popsy-animated-fadeout', // class to add when popup is toggled off
     location: 'bottom-left', // location where popup will be shown
-    popsyId: null, // id of the element to be used as container
+    tepsiId: null, // id of the element to be used as container
     xOffset: '10px', // offset from the left/right edge of the screen
     yOffset: '10px', // offset from the top/bottom of the screen
     containerElement: 'div', // default container element
@@ -36,8 +36,8 @@ function popsy(options) {
 
   const opts = { ...defaultOptions, ...options };
 
-  // create popsy container
-  const containerSelector = opts.popsyId || selectors.tepsi;
+  // create tepsi container
+  const containerSelector = opts.tepsiId || selectors.tepsi;
   let container = document.getElementById(containerSelector);
 
   // fallback to default container when none is found
