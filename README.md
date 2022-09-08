@@ -7,7 +7,7 @@
 ## Usage
 Displays `foo` within the popup.
 ```javascript
-let tepsi = popsy({
+let tepsiPopup = tepsi({
     content: 'foo',
 });
 ```
@@ -19,8 +19,8 @@ Displays the element with the id `foo` within the popup.
 ```
 
 ```javascript
-let tepsi = popsy({
-    popsyId: 'foo',
+let tepsi = tepsi({
+    tepsiId: 'foo',
 });
 ```
 
@@ -35,7 +35,7 @@ let tepsi = popsy({
 | animateInClass | string | 'popsy-animated-fadein' | animation class to add when popup is toggled on |
 | animateOutClass | string |'popsy-animated-fadeout' | animation class to add when popup is toggled off |
 | location | string |'bottom-left' | location where popup will be shown|
-| popsyId |string | null | id of the element to be used as container|
+| tepsiId |string | null | id of the element to be used as container|
 | xOffset | string | '10px' | offset from the left/right edge of the screen|
 | yOffset | string |'10px' | offset from the top/bottom of the screen|
 | containerElement | string | 'div' | default container element tag|
