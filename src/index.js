@@ -7,9 +7,9 @@ function tepsi(options) {
     width: '300px',
     autoDismiss: false, // automatically dismisses the popup within provided displayDuration
     displayDuration: 1000, // duration the popup will stay on screen if autoDismiss is set to true
-    animateIdleClass: 'popsy-animated', // default animation class
-    animateInClass: 'popsy-animated-fadein', // class to add when popup is toggled on
-    animateOutClass: 'popsy-animated-fadeout', // class to add when popup is toggled off
+    animateIdleClass: 'tepsi-animated', // default animation class
+    animateInClass: 'tepsi-animated-fadein', // class to add when popup is toggled on
+    animateOutClass: 'tepsi-animated-fadeout', // class to add when popup is toggled off
     location: 'bottom-left', // location where popup will be shown
     tepsiId: null, // id of the element to be used as container
     xOffset: '10px', // offset from the left/right edge of the screen
