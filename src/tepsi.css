@@ -1,8 +1,8 @@
 :root {
-    --popsy-animation-duration: 1s;
+    --tepsi-animation-duration: 1s;
 }
 
-.popsy {
+.tepsi {
     position: fixed;
     max-width: 300px;
     z-index: 999;
@@ -13,14 +13,14 @@
     width: 0;
 }
 
-.popsy-active {
+.tepsi-active {
     visibility: visible;
     overflow: unset;
     height: auto;
     width: auto;
 }
 
-.popsy-dismiss {
+.tepsi-dismiss {
     position: absolute;
     right: -5px;
     top: -5px;
@@ -35,25 +35,25 @@
     cursor: pointer;
 }
 
-@keyframes popsyFadeIn {
+@keyframes tepsiFadeIn {
    0% { opacity: 0;}
    100% { opacity: 1;} 
 }
 
-@keyframes popsyFadeOut {
+@keyframes tepsiFadeOut {
     0% { opacity: 1;}
     100% { opacity: 0;}
 }
 
-.popsy-animated {
-    animation-name: popsyFadeIn;
-    animation-duration: var(--popsy-animation-duration);
+.tepsi-animated {
+    animation-name: tepsiFadeIn;
+    animation-duration: var(--tepsi-animation-duration);
 }
 
-.popsy-animated-fadein {
-    animation-name: popsyFadeIn;
+.tepsi-animated-fadein {
+    animation-name: tepsiFadeIn;
 }
 
-.popsy-animated-fadeout {
-    animation-name: popsyFadeOut;
+.tepsi-animated-fadeout {
+    animation-name: tepsiFadeOut;
 }
