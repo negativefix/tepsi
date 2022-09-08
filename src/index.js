@@ -1,6 +1,6 @@
 // TODO - document default options using js doc
 // TODO - add examples
-import './popsy.css';
+import './tepsi.css';
 
 function popsy(options) {
   const defaultOptions = {
