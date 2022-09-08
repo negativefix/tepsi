@@ -2,7 +2,7 @@
 // TODO - add examples
 import './tepsi.css';
 
-function popsy(options) {
+function tepsi(options) {
   const defaultOptions = {
     width: '300px',
     autoDismiss: false, // automatically dismisses the popup within provided displayDuration
@@ -171,4 +171,4 @@ function popsy(options) {
   };
 }
 
-export default popsy;
+export default tepsi;
