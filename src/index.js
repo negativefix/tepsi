@@ -64,7 +64,7 @@ function popsy(options) {
       setTimeout(() => toggle(), opts.displayDuration);
     }
 
-    // if popup is visible at the time animation ends toggle the container off
+    // hide tepsi if its no longer active at the time animation ends
     if (!state.isActive) {
       container.classList.toggle(selectors.tepsiActive);
       container.classList.remove(opts.animateIdleClass, opts.animateOutClass);
@@ -82,10 +82,10 @@ function popsy(options) {
 
   if (isFn(opts.beforeInitialize)) opts.beforeInitialize();
 
-  // insert into DOM
+  // insert tepsi container into DOM
   document.body.appendChild(container);
 
-  // toggle popup on
+  // toggle tepsi on
   toggle();
 
   if (isFn(opts.afterInitialized)) opts.afterInitialized();
@@ -159,8 +159,8 @@ function popsy(options) {
     } else {
       container.classList.add(opts.animateInClass);
       container.classList.remove(opts.animateOutClass);
-      // when toggling on immediately display the popup
-      // when toggling off wait for animation to finish
+      // do not wait for animation to end when toggle on
+      // wait for animation to end when toggle off
       container.classList.toggle(selectors.tepsiActive);
     }
   }
